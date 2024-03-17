@@ -18,11 +18,11 @@ header{
 }
 header .logo{
   cursor: pointer;
-  padding-top: 2rem;
-  margin-left: 3rem;
+  padding-top: 1rem;
+  margin-left: 2rem;
 }
 header .logo img{
-  width: 100%;
+  width: 50%;
 }
 header nav ul{
   list-style: none;
