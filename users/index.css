@@ -22,7 +22,7 @@ header .logo{
   margin-left: 2rem;
 }
 header .logo img{
-  width: 50%;
+  width: 45%;
 }
 header nav ul{
   list-style: none;
@@ -487,10 +487,10 @@ main {
 @media only screen and (max-width: 600px) {
   /* General */
   header .logo {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
   header nav ul li {
-    margin-right: 2rem;
+    margin-right: 0.5rem;
   }
 
   /* Main part 1 */

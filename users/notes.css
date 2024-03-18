@@ -128,7 +128,7 @@ header nav ul li a:hover::after {
 
 
 .plus-icon:hover {
-    transform: scale(1.05);
+    transform: scale(1);
 }
   @keyframes glowing {
     0% { background-position: 0 0; }
