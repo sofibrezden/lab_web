@@ -17,7 +17,7 @@ header .logo {
   margin-left: 2rem;
 }
 header .logo img {
-  width: 50%;
+  width: 45%;
 }
 header nav ul {
     list-style: none;
@@ -203,4 +203,14 @@ input:active,
       0% { background-position: 0 0; }
       20% { background-position: 400% 0; }
       100% { background-position: 0 0; }
+  }
+
+  @media only screen and (max-width: 600px) {
+    header nav ul {
+      font-size: 0.6rem;
+    }
+  
+    header nav ul li {
+      margin: 0.5rem; /* Встановіть потрібний відступ між елементами */
+    }
   }

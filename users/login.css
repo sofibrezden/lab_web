@@ -58,7 +58,6 @@
       }
       .whole {
           justify-content: center;
-        ;
           margin: 100px auto;
       }
     .container{
@@ -186,4 +185,13 @@
       }
       .signup-link a:hover {
           text-decoration: underline;
+      }
+      @media only screen and (max-width: 600px) {
+        header nav ul {
+          font-size: 0.6rem;
+        }
+      
+        header nav ul li {
+          margin: 0.5rem; /* Встановіть потрібний відступ між елементами */
+        }
       }
