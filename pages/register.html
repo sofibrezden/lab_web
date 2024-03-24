@@ -1,71 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/register.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 
-    
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/register.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
+
 <body>
-     <header>
-    
+  <header>
     <div class="logo">
       <a href="../index.html"><img src="images/llogo.png" alt=""></a>
     </div>
     <nav>
       <ul>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="login.html">Sign In</a></li>
       </ul>
     </nav>
   </header>
   <div class="whole">
     <div class="container">
-        <div class="title">Registration</div>
-        <div class="content">
-            <form method="post" action="{% url 'register' %}">
-                
-                
-
-                <div class="user-details">
-                  <form action="#">
-                    
-                      <div class="input-box">
-                        <span class="details">First Name</span>
-                        <input type="text" placeholder="Enter your first name" required>
-                      </div>
-                      <div class="input-box">
-                        <span class="details">Last Name</span>
-                        <input type="text" placeholder="Enter your last name" required>
-                      </div>
-                      <div class="input-box">
-                        <span class="details">Username</span>
-                        <input type="text" placeholder="Enter your username" required>
-                      </div>
-                      <div class="input-box">
-                        <span class="details">Email</span>
-                        <input type="text" placeholder="Enter your email" required>
-                      </div>
-                      <div class="input-box">
-                        <span class="details">Password</span>
-                        <input type="text" placeholder="Enter your password" required>
-                      </div>
-                      <div class="input-box">
-                        <span class="details">Confirm Password</span>
-                        <input type="text" placeholder="Confirm your password" required>
-                      </div>
-                </div>
-
-                <div class="button">
-                  <form action="login.html">
-                      <input type="submit" value="Register">
-                  </form>
+      <div class="title">Registration</div>
+      <div class="content">
+        <form method="post" action="{% url 'register' %}">
+          <div class="user-details">
+            <form action="#">
+              <div class="input-box">
+                <span class="details">First Name</span>
+                <input type="text" placeholder="Enter your first name" required>
               </div>
+              <div class="input-box">
+                <span class="details">Last Name</span>
+                <input type="text" placeholder="Enter your last name" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Username</span>
+                <input type="text" placeholder="Enter your username" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input type="text" placeholder="Enter your password" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input type="text" placeholder="Confirm your password" required>
+              </div>
+          </div>
+          <div class="button">
+            <form action="login.html">
+              <input type="submit" value="Register" onclick="window.location.href = '../index.html';">
             </form>
-        </div>
+          </div>
+        </form>
+      </div>
     </div>
-</div>
+  </div>
 </body>
+
 </html>
