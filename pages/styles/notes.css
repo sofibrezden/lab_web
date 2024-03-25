@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
 body {
   background-color: hsl(240, 75%, 98%);
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -18,35 +17,29 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 header .logo {
   cursor: pointer;
   padding-top: 2rem;
   margin-left: 2rem;
 }
-
 header .logo img {
   width: 45%;
 }
-
 header nav ul {
   list-style: none;
   padding-top: 2rem;
 }
-
 header nav ul li {
   display: inline;
   margin-right: 3rem;
 }
-
 header nav ul li a {
   color: hsl(238, 22%, 44%);
   text-decoration: none;
   position: relative;
 }
-
 header nav ul li a::after {
-  content: '';
+  content: "";
   width: 0%;
   height: 0.2rem;
   background-color: #9874e0;
@@ -56,7 +49,6 @@ header nav ul li a::after {
   left: 50%;
   transition: 0.4s;
 }
-
 header nav ul li a:hover::after {
   width: 100%;
   left: 0;
@@ -66,11 +58,8 @@ header nav ul li a:hover::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
-
-
 
 .wrapper {
   margin: 50px auto;
@@ -95,9 +84,8 @@ header nav ul li a:hover::after {
   position: relative;
   overflow: hidden;
 }
-
 .note:before {
-  content: '';
+  content: "";
   background: linear-gradient(45deg, rgb(197, 194, 249), rgb(202, 151, 241), rgb(119, 113, 238));
   position: absolute;
   top: -2px;
@@ -112,7 +100,6 @@ header nav ul li a:hover::after {
   transition: opacity 0.8s ease-in-out;
   border-radius: 10px;
 }
-
 .note:hover:before {
   opacity: 1;
 }
@@ -132,13 +119,10 @@ header nav ul li a:hover::after {
   filter: hue-rotate(60deg);
   transition: transform 0.3s ease-in-out;
 }
-
 .plus-icon img {
   width: 35px;
   height: 35px;
 }
-
-
 .plus-icon:hover {
   transform: scale(1);
 }
@@ -147,17 +131,13 @@ header nav ul li a:hover::after {
   0% {
     background-position: 0 0;
   }
-
   20% {
     background-position: 400% 0;
   }
-
   100% {
     background-position: 0 0;
   }
 }
-
-
 .note:hover {
   transform: scale(1.05);
 }
@@ -167,22 +147,19 @@ header nav ul li a:hover::after {
   filter: hue-rotate(60deg);
   transition: transform 0.3s ease-in-out;
 }
-
 .note-icon:hover {
   transform: scale(0.4);
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
 
 .note .details {
   max-height: 165px;
   overflow-y: auto;
 }
-
 .note p {
   font-size: 22px;
   font-weight: 500;
 }
-
 .note span {
   display: block;
   color: #575757;
@@ -195,7 +172,6 @@ header nav ul li a:hover::after {
   font-size: 14px;
 }
 
-
 /* Медіа-запит для смартфонів */
 @media only screen and (max-width: 1024px) {
   .wrapper {
@@ -207,38 +183,32 @@ header nav ul li a:hover::after {
     padding: 0 20px;
     justify-content: center;
   }
-
   .note {
     height: auto;
   }
-
   .plus-icon {
-
     right: 30px;
   }
-
   .plus-icon img {
     width: 30px;
     height: 30px;
   }
 }
-
 @media only screen and (max-width: 600px) {
   header nav ul {
     font-size: 0.6rem;
   }
-
+  header nav ul li {
+    margin: 0.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header nav ul {
+    font-size: 0.6rem;
+  }
   header nav ul li {
     margin: 0.5rem;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  header nav ul {
-    font-size: 0.6rem;
-  }
-
-  header nav ul li {
-    margin: 0.5rem;
-  }
-}
+/*# sourceMappingURL=notes.css.map */
